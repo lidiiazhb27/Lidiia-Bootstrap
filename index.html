@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <!-- Підключила  Bootstrap JS та CSS  -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <form class="container-fluid justify-content-start">
+            <a href="index.html"><button class="btn btn-outline-success me-2" type="button">English cocker
+                    spaniel</button></a>
+            <a href="second.html"><button class="btn btn-sm btn-outline-secondary" type="button">Second page</button></a>
+            <!-- помістила кнопки в тег <a>, щоб при кліку користувач відвідував іншу сторінку -->
+        </form>
+    </nav>
+    <!-- navbar за допомогою фреймворку-->
+    <h1>English cocker spaniel</h1>
+    <!-- заголовок -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="photo-size" src="photo1.JPG" alt="">
+            </div>
+            <div class="col-sm-8">
+                The English Cocker Spaniel is a breed of gun dog. It is noteworthy for producing one of the most varied
+                numbers of pups in a litter among all dog breeds. The English Cocker Spaniel is an active, good-natured,
+                sporting dog standing well up at the withers and compactly built. There are "field" or "working"
+                cockers and "house" cockers. It is one of several varieties of spaniel and is the foundation of its
+                American cousin, the American Cocker Spaniel. The English Cocker is closer to the working-dog form of
+                the Field Spaniel and the English Springer Spaniel.
+                <br>
+                The English Cocker Spaniel is a sturdy, compact, well-balanced dog. It has a characteristic expression
+                showing intelligence and alertness. Its eyes should be dark and its lobular ears should reach "a bit
+                past" the tip of the nose when pulled forward. Today, a significant difference in appearance exists
+                between field-bred and conformation show-bred dogs. The Cocker's tail is customarily docked in North
+                America. In countries where docking is legal, the tail is generally docked at about 4–5 inches (10–13
+                cm) in field-bred dogs while show dogs are generally docked closer to the body. Docking is now illegal
+                in Australia and South Africa. In England and Wales, docking can only be carried out on dogs where the
+                owners have proved that the dogs will be used as working or shooting dogs.
+            </div>
+        </div>
+    </div>
+    <!-- фото і текст, який я застилізувала за допомогою фреймворку, а саме grid system,
+     також використала контейнер -->
+    <div class="flex-end">
+        <button type="button" class="btn btn-light">Light</button>
+    </div>
+    <!-- кнопка, світлого стилю -->
+    <hr>
+    <!-- горизонтальна лінія кнапками -->
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="dog1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="dog2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="dog3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="dog4.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="dog5.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- карусель фоток за допомогою Bootstrap, переключати можна стрілками -->
+    <!-- можна було зробити не на весь екран, але мені так більше подобаться, проте
+    я знаю як це робиться -> потрібно застилізувати клас carousel і додати ширину, наприклад, width=70%; -->
+    <div class="flex-center">
+        <div class="card" style="width: 18rem;">
+            <img src="red.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Red dog</h5>
+                <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex debitis pariatur
+                    sapiente at necessitatibus dolore quae officia dolorem. Quisquam quod necessitatibus sit architecto
+                    corrupti alias.</p>
+                <a href="https://www.shutterstock.com/search/red+cocker+spaniel" class="btn btn-primary">Go
+                    to watch</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="black.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Black dog</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi repellendus beatae
+                    sint enim saepe cum modi eligendi accusantium aliquid delectus nobis dolore facilis, veniam
+                    provident, obcaecati, necessitatibus sequi maxime amet?
+                    card's content.</p>
+                <a href="https://www.pinterest.com/cjackson2129153/black-cocker-spaniel/" class="btn btn-primary">Go to
+                    watch</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="black-white.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Black whith white</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti illo harum
+                    officia. Aut consequuntur numquam id, assumenda vero repellendus similique voluptatibus harum
+                    soluta! Odio quia Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt fuga quam atque
+                    cupiditate in dolorem obcaecati, quo facere doloremque consequatur harum voluptatum eum, pariatur
+                    ratione, ducimus tenetur unde mollitia! Asperiores quis autem cumque amet ratione itaque tenetur in
+                    facilis cum? inventore nulla assumenda nisi earum modi aliquid reiciendis dolores praesentium
+                    quaerat repudiandae ipsam alias quae, dolorem esse corporis eos facilis?
+                    card's content.</p>
+                <a href="https://www.shutterstock.com/search/cocker+spaniel+black+white" class="btn btn-primary">Go to
+                    watch</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- картrи, що містять фото, текст і посилання. виглядають як колонки, реалізовувала за допомогою Bootstrap -->
+    <footer>
+        <p>I LOVE DOG!!!</p>
+    </footer>
+    <!-- звичайний 'підвал', додала згідно макету, а в макеті просто для структури сайту -->
+</body>
+
+</html>
